@@ -1,0 +1,15 @@
+---
+title: "Zong Yao's website"
+---
+
+https://github.com/zeewhyp/ZY_NM2207S1.git
+
+This is the link to my GitHub profile.
+
+![](images/self.jpg){width="214"}
+
+Hello, my name is Phua Zong Yao. Welcome to my website. I am currently a Year 2 Communications and New Media student in NUS, also minoring in Sociology.
+
+I have created this website using Quarto as part of the final project for the NM2207 Module.
+
+The topic that I chose was Social Media in Singapore. I felt it was a relevant topic to discuss, and it was also not too difficult to find different data sets to work with.
