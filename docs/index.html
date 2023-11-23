@@ -20,50 +20,12 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,12 +36,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -92,6 +48,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
 <script src="site_libs/plotly-binding-4.10.3/plotly.js"></script>
 <script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
@@ -116,7 +73,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <span class="navbar-title">Social Media in Singapore</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -138,42 +94,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#number-of-social-media-users-in-singapore-for-2017-2028" id="toc-number-of-social-media-users-in-singapore-for-2017-2028" class="nav-link active" data-scroll-target="#number-of-social-media-users-in-singapore-for-2017-2028">Number of social media users in Singapore for 2017-2028</a></li>
-  <li><a href="#the-social-media-penetration-rate-in-singapore-for-2019-2028" id="toc-the-social-media-penetration-rate-in-singapore-for-2019-2028" class="nav-link" data-scroll-target="#the-social-media-penetration-rate-in-singapore-for-2019-2028">The social media penetration rate in Singapore for 2019-2028</a></li>
-  <li><a href="#the-size-of-the-social-network-advertising-audience-in-singapore-as-of-january-2023-by-platform-in-millions" id="toc-the-size-of-the-social-network-advertising-audience-in-singapore-as-of-january-2023-by-platform-in-millions" class="nav-link" data-scroll-target="#the-size-of-the-social-network-advertising-audience-in-singapore-as-of-january-2023-by-platform-in-millions">The size of the social network advertising audience in Singapore as of January 2023, by platform (in millions)</a></li>
-  <li><a href="#the-gender-distribution-of-the-social-network-advertising-audience-in-singapore-as-of-january-2022-by-platform" id="toc-the-gender-distribution-of-the-social-network-advertising-audience-in-singapore-as-of-january-2022-by-platform" class="nav-link" data-scroll-target="#the-gender-distribution-of-the-social-network-advertising-audience-in-singapore-as-of-january-2022-by-platform">The gender distribution of the social network advertising audience in Singapore as of January 2022, by platform</a></li>
-  <li><a href="#the-average-time-spent-using-online-media-in-singapore-in-q3-2022-by-activity-in-hours-and-minutes-per-day" id="toc-the-average-time-spent-using-online-media-in-singapore-in-q3-2022-by-activity-in-hours-and-minutes-per-day" class="nav-link" data-scroll-target="#the-average-time-spent-using-online-media-in-singapore-in-q3-2022-by-activity-in-hours-and-minutes-per-day">The average time spent using online media in Singapore in Q3 2022, by activity (in hours and minutes per day)</a></li>
-  <li><a href="#the-time-spent-on-social-media-platforms-per-day-in-singapore-as-of-january-2022" id="toc-the-time-spent-on-social-media-platforms-per-day-in-singapore-as-of-january-2022" class="nav-link" data-scroll-target="#the-time-spent-on-social-media-platforms-per-day-in-singapore-as-of-january-2022">The time spent on social media platforms per day in Singapore as of January 2022</a></li>
-  <li><a href="#the-main-reasons-for-using-social-media-in-singapore-in-2022" id="toc-the-main-reasons-for-using-social-media-in-singapore-in-2022" class="nav-link" data-scroll-target="#the-main-reasons-for-using-social-media-in-singapore-in-2022">The main reasons for using social media in Singapore in 2022</a></li>
-  <li><a href="#the-share-of-consumers-who-engaged-with-ads-on-social-media-platforms-in-singapore-as-of-january-2022" id="toc-the-share-of-consumers-who-engaged-with-ads-on-social-media-platforms-in-singapore-as-of-january-2022" class="nav-link" data-scroll-target="#the-share-of-consumers-who-engaged-with-ads-on-social-media-platforms-in-singapore-as-of-january-2022">The share of consumers who engaged with ads on social media platforms in Singapore as of January 2022</a></li>
-  <li><a href="#the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-video-views-in-billions" id="toc-the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-video-views-in-billions" class="nav-link" data-scroll-target="#the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-video-views-in-billions">The most popular Youtube channels in Singapore as of October 2022, by number of video views (in billions)</a></li>
-  <li><a href="#the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-subscribers-in-millions" id="toc-the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-subscribers-in-millions" class="nav-link" data-scroll-target="#the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-subscribers-in-millions">The most popular Youtube channels in Singapore as of October 2022, by number of subscribers (in millions)</a>
-  <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#number-of-social-media-users-in-singapore-for-2017-2028-1" id="toc-number-of-social-media-users-in-singapore-for-2017-2028-1" class="nav-link" data-scroll-target="#number-of-social-media-users-in-singapore-for-2017-2028-1">Number of social media users in Singapore for 2017-2028</a></li>
-  <li><a href="#the-social-media-penetration-rate-in-singapore-for-2019-2028-1" id="toc-the-social-media-penetration-rate-in-singapore-for-2019-2028-1" class="nav-link" data-scroll-target="#the-social-media-penetration-rate-in-singapore-for-2019-2028-1">The social media penetration rate in Singapore for 2019-2028</a></li>
-  <li><a href="#the-size-of-the-social-network-advertising-audience-in-singapore-as-of-january-2023-by-platform-in-millions-1" id="toc-the-size-of-the-social-network-advertising-audience-in-singapore-as-of-january-2023-by-platform-in-millions-1" class="nav-link" data-scroll-target="#the-size-of-the-social-network-advertising-audience-in-singapore-as-of-january-2023-by-platform-in-millions-1">The size of the social network advertising audience in Singapore as of January 2023, by platform (in millions)</a></li>
-  <li><a href="#the-gender-distribution-of-the-social-network-advertising-audience-in-singapore-as-of-january-2022-by-platform-1" id="toc-the-gender-distribution-of-the-social-network-advertising-audience-in-singapore-as-of-january-2022-by-platform-1" class="nav-link" data-scroll-target="#the-gender-distribution-of-the-social-network-advertising-audience-in-singapore-as-of-january-2022-by-platform-1">The gender distribution of the social network advertising audience in Singapore as of January 2022, by platform</a></li>
-  <li><a href="#the-average-time-spent-using-online-media-in-singapore-in-q3-2022-by-activity-in-hours-and-minutes-per-day-1" id="toc-the-average-time-spent-using-online-media-in-singapore-in-q3-2022-by-activity-in-hours-and-minutes-per-day-1" class="nav-link" data-scroll-target="#the-average-time-spent-using-online-media-in-singapore-in-q3-2022-by-activity-in-hours-and-minutes-per-day-1">The average time spent using online media in Singapore in Q3 2022, by activity (in hours and minutes per day)</a></li>
-  <li><a href="#the-time-spent-on-social-media-platforms-per-day-in-singapore-as-of-january-2022-1" id="toc-the-time-spent-on-social-media-platforms-per-day-in-singapore-as-of-january-2022-1" class="nav-link" data-scroll-target="#the-time-spent-on-social-media-platforms-per-day-in-singapore-as-of-january-2022-1">The time spent on social media platforms per day in Singapore as of January 2022</a></li>
-  <li><a href="#the-main-reasons-for-using-social-media-in-singapore-in-2022-1" id="toc-the-main-reasons-for-using-social-media-in-singapore-in-2022-1" class="nav-link" data-scroll-target="#the-main-reasons-for-using-social-media-in-singapore-in-2022-1">The main reasons for using social media in Singapore in 2022</a></li>
-  <li><a href="#the-share-of-consumers-who-engaged-with-ads-on-social-media-platforms-in-singapore-as-of-january-2022-1" id="toc-the-share-of-consumers-who-engaged-with-ads-on-social-media-platforms-in-singapore-as-of-january-2022-1" class="nav-link" data-scroll-target="#the-share-of-consumers-who-engaged-with-ads-on-social-media-platforms-in-singapore-as-of-january-2022-1">The share of consumers who engaged with ads on social media platforms in Singapore as of January 2022</a></li>
-  <li><a href="#the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-video-views-in-billions-1" id="toc-the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-video-views-in-billions-1" class="nav-link" data-scroll-target="#the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-video-views-in-billions-1">The most popular Youtube channels in Singapore as of October 2022, by number of video views (in billions)</a></li>
-  <li><a href="#the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-subscribers-in-millions-1" id="toc-the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-subscribers-in-millions-1" class="nav-link" data-scroll-target="#the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-subscribers-in-millions-1">The most popular Youtube channels in Singapore as of October 2022, by number of subscribers (in millions)</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -192,223 +118,427 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="number-of-social-media-users-in-singapore-for-2017-2028" class="level1">
-<h1>Number of social media users in Singapore for 2017-2028</h1>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b8605556bb9e6fca98be" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-b8605556bb9e6fca98be">{"x":{"data":[{"orientation":"v","width":[0.90000000000009095,0.90000000000009095,0.90000000000009095,0.90000000000009095,0.90000000000009095,0.90000000000009095,0.90000000000009095,0.90000000000009095,0.90000000000009095,0.90000000000009095,0.90000000000009095,0.90000000000009095],"base":[0,0,0,0,0,0,0,0,0,0,0,0],"x":[2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028],"y":[4.4299999999999997,4.75,4.8899999999999997,5.1399999999999997,5.3300000000000001,5.5099999999999998,5.6699999999999999,5.8099999999999996,5.9500000000000002,6.0599999999999996,6.1100000000000003,6.1500000000000004],"text":["Year1: 2017<br />Numberusers1.millions.: 4.43","Year1: 2018<br />Numberusers1.millions.: 4.75","Year1: 2019<br />Numberusers1.millions.: 4.89","Year1: 2020<br />Numberusers1.millions.: 5.14","Year1: 2021<br />Numberusers1.millions.: 5.33","Year1: 2022<br />Numberusers1.millions.: 5.51","Year1: 2023<br />Numberusers1.millions.: 5.67","Year1: 2024<br />Numberusers1.millions.: 5.81","Year1: 2025<br />Numberusers1.millions.: 5.95","Year1: 2026<br />Numberusers1.millions.: 6.06","Year1: 2027<br />Numberusers1.millions.: 6.11","Year1: 2028<br />Numberusers1.millions.: 6.15"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(135,206,235,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"green","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}},{"x":[2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028],"y":[4.4299999999999997,4.75,4.8899999999999997,5.1399999999999997,5.3300000000000001,5.5099999999999998,5.6699999999999999,5.8099999999999996,5.9500000000000002,6.0599999999999996,6.1100000000000003,6.1500000000000004],"text":[4.4299999999999997,4.75,4.8899999999999997,5.1399999999999997,5.3300000000000001,5.5099999999999998,5.6699999999999999,5.8099999999999996,5.9500000000000002,6.0599999999999996,6.1100000000000003,6.1500000000000004],"hovertext":["Year1: 2017<br />Numberusers1.millions.: 4.43","Year1: 2018<br />Numberusers1.millions.: 4.75","Year1: 2019<br />Numberusers1.millions.: 4.89","Year1: 2020<br />Numberusers1.millions.: 5.14","Year1: 2021<br />Numberusers1.millions.: 5.33","Year1: 2022<br />Numberusers1.millions.: 5.51","Year1: 2023<br />Numberusers1.millions.: 5.67","Year1: 2024<br />Numberusers1.millions.: 5.81","Year1: 2025<br />Numberusers1.millions.: 5.95","Year1: 2026<br />Numberusers1.millions.: 6.06","Year1: 2027<br />Numberusers1.millions.: 6.11","Year1: 2028<br />Numberusers1.millions.: 6.15"],"textfont":{"size":14.66456692913386,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"green","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":31.415525114155255},"font":{"color":"white","family":"DM Sans","size":15},"title":{"text":"Number of social media users in Singapore from 2017-2028","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2015.9549999999999,2029.0450000000001],"tickmode":"array","ticktext":["2017","2018","2019","2020","2021","2022","2023","2024","2025","2026","2027","2028"],"tickvals":[2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028],"categoryorder":"array","categoryarray":["2017","2018","2019","2020","2021","2022","2023","2024","2025","2026","2027","2028"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.30750000000000005,6.4575000000000005],"tickmode":"array","ticktext":["0","2","4","6"],"tickvals":[0,2,4,6],"categoryorder":"array","categoryarray":["0","2","4","6"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Number of Users","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"138d431ab18c":{"x":{},"y":{},"type":"bar"},"138d47e81d07":{"x":{},"y":{},"label":{}}},"cur_data":"138d431ab18c","visdat":{"138d431ab18c":["function (y) ","x"],"138d47e81d07":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p><img src="images/fpmediaicon.jpg" class="img-fluid"></p>
 </div>
 </div>
+<p><a href="https://www.freepik.com/free-vector/social-media-background-with-hand-drawn-elements_2330985.htm">Link to Social Media Image</a></p>
+<section id="introduction-to-the-topic" class="level1">
+<h1>Introduction to the topic</h1>
+<p>Over the past decade or so, Singapore has undergone a remarkable transformation in the realm of social media, becoming a dynamic landscape shaped by technological advancements, cultural shifts, and the ever-changing preferences to its digitally connected population. From the early days of simple status updates to the current era of immersive multimedia content, the journey of social media in Singapore reflects not only the evolution of technology but also the changing ways in which people communicate, connect, and consume information.</p>
+<p>In this data story, we will delve more into the intricate tapestry of social media usage in Singapore, unraveling the trends that have defined the past decade and beyond. Through a comprehensive analysis of data trends, user behavior, and platform dynamics, we aim to provide a nuanced understanding of how social media has evolved and what forces have been instrumental in steering its course. From the rise of new platforms to the impact of global events, the story of social media in Singapore is one that intertwines with the broader narrative of our digital age.</p>
+<p>As we unravel the intricacies of this digital evolution, we seek to answer the fundamental question: How has social media usage transformed, and what are the key trends influencing these changes in the Lion City?</p>
 </section>
-<section id="the-social-media-penetration-rate-in-singapore-for-2019-2028" class="level1">
-<h1>The social media penetration rate in Singapore for 2019-2028</h1>
+<section id="number-of-social-media-users-in-singapore" class="level1">
+<h1>Number of Social Media Users in Singapore</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>font <span class="ot">=</span> <span class="fu">list</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> <span class="st">"DM Sans"</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> <span class="dv">15</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"white"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>label <span class="ot">=</span> <span class="fu">list</span>(</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">bgcolor =</span> <span class="st">"blue"</span>,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">bordercolor =</span> <span class="st">"transparent"</span>,</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">font =</span> font</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(pic2,<span class="at">tooltip =</span><span class="fu">c</span>(<span class="st">"x"</span>,<span class="st">"y"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">style</span>(<span class="at">hoverlabel =</span> label) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">font =</span> font)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-ecd26558b0d176721179" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-ecd26558b0d176721179">{"x":{"data":[{"x":[2019,2020,2021,2022,2023,2024],"y":[84.25,87.920000000000002,90.370000000000005,92.629999999999995,94.609999999999999,96.329999999999998],"text":["Year2: 2019<br />SocialMediaPenRate...: 84.25","Year2: 2020<br />SocialMediaPenRate...: 87.92","Year2: 2021<br />SocialMediaPenRate...: 90.37","Year2: 2022<br />SocialMediaPenRate...: 92.63","Year2: 2023<br />SocialMediaPenRate...: 94.61","Year2: 2024<br />SocialMediaPenRate...: 96.33"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":37.260273972602747},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"white","family":"DM Sans","size":15},"title":{"text":"The social media penetration rate in Singapore for 2019-2028","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2018.75,2024.25],"tickmode":"array","ticktext":["2019","2020","2021","2022","2023","2024"],"tickvals":[2019,2020,2021,2022,2023,2024],"categoryorder":"array","categoryarray":["2019","2020","2021","2022","2023","2024"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[83.646000000000001,96.933999999999997],"tickmode":"array","ticktext":["84","88","92","96"],"tickvals":[84,88,92,96],"categoryorder":"array","categoryarray":["84","88","92","96"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Social Media Penetration Rate","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"138d444ab42fc":{"x":{},"y":{},"type":"scatter"}},"cur_data":"138d444ab42fc","visdat":{"138d444ab42fc":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b8f4eafb8360eda18f87" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-b8f4eafb8360eda18f87">{"x":{"visdat":{"30841d4c419d":["function () ","plotlyVisDat"]},"cur_data":"30841d4c419d","attrs":{"30841d4c419d":{"x":{},"y":{},"mode":"lines+markers","line":{"color":"red"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Number of Social Media Users in Singapore","xaxis":{"domain":[0,1],"automargin":true,"title":"Year","tickmode":"linear","dtick":1},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number of Users (in millions)"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":[2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028],"y":[4.4299999999999997,4.75,4.8899999999999997,5.1399999999999997,5.3300000000000001,5.5099999999999998,5.6699999999999999,5.8099999999999996,5.9500000000000002,6.0599999999999996,6.1100000000000003,6.1500000000000004],"mode":"lines+markers","line":{"color":"red"},"type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
+<p>I have made a interactive version of this graph using Shiny. You can view it <a href="http://127.0.0.1:7265/">here</a>.</p>
+<p>Now let us take a look at some of the data. The graph above references the number of social media users in Singapore from 2017-2028. Let’s see some possible deductions we might be able to make based on this information.</p>
+<section id="steady-growth" class="level3">
+<h3 class="anchored" data-anchor-id="steady-growth">Steady Growth</h3>
+<p>The number of social media users in Singapore has been consistently increasing over the years from 2017 to 2028. This suggests a sustained interest and adoption of social media platforms among the population.</p>
 </section>
-<section id="the-size-of-the-social-network-advertising-audience-in-singapore-as-of-january-2023-by-platform-in-millions" class="level1">
-<h1>The size of the social network advertising audience in Singapore as of January 2023, by platform (in millions)</h1>
-<div class="cell">
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-23984b7a685cfb164463" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-23984b7a685cfb164463">{"x":{"data":[{"x":[5.5,5.0800000000000001,3.7000000000000002,3.2999999999999998,2.7000000000000002,2.3900000000000001,1.95,1.45,null,null],"y":[8,9,5,2,4,7,3,6,1,1],"text":["AdvertAudience.millions.: 5.50<br />SocialPlatform1: Twitter","AdvertAudience.millions.: 5.08<br />SocialPlatform1: YouTube","AdvertAudience.millions.: 3.70<br />SocialPlatform1: LinkedIn","AdvertAudience.millions.: 3.30<br />SocialPlatform1: Facebook","AdvertAudience.millions.: 2.70<br />SocialPlatform1: Instagram","AdvertAudience.millions.: 2.39<br />SocialPlatform1: TikTok","AdvertAudience.millions.: 1.95<br />SocialPlatform1: Facebook Messenger","AdvertAudience.millions.: 1.45<br />SocialPlatform1: Snapchat","AdvertAudience.millions.:   NA<br />SocialPlatform1: ","AdvertAudience.millions.:   NA<br />SocialPlatform1: "],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":130.77625570776257},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"white","family":"DM Sans","size":15},"title":{"text":"Social network advertising audience in Singapore as of January 2023, by platform (in millions)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1.2475000000000001,5.7024999999999997],"tickmode":"array","ticktext":["2","3","4","5"],"tickvals":[2,3,4,5],"categoryorder":"array","categoryarray":["2","3","4","5"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Size of Advertising Audience (in millions)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,9.5999999999999996],"tickmode":"array","ticktext":["","Facebook","Facebook Messenger","Instagram","LinkedIn","Snapchat","TikTok","Twitter","YouTube"],"tickvals":[1,2,3,4,5,6,6.9999999999999991,8,9],"categoryorder":"array","categoryarray":["","Facebook","Facebook Messenger","Instagram","LinkedIn","Snapchat","TikTok","Twitter","YouTube"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Social Platform","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"138d4589371a3":{"x":{},"y":{},"type":"scatter"}},"cur_data":"138d4589371a3","visdat":{"138d4589371a3":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
+<section id="incremental-increase" class="level3">
+<h3 class="anchored" data-anchor-id="incremental-increase">Incremental Increase</h3>
+<p>The growth rate appears to be incremental, with the number of users gradually rising each year. This could indicate a stable and predictable trend in the adoption of social media in the country.</p>
 </section>
-<section id="the-gender-distribution-of-the-social-network-advertising-audience-in-singapore-as-of-january-2022-by-platform" class="level1">
-<h1>The gender distribution of the social network advertising audience in Singapore as of January 2022, by platform</h1>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-58590e22184ff4f23bcb" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-58590e22184ff4f23bcb">{"x":{"data":[{"orientation":"v","width":[52,48,45.799999999999997,54.200000000000003,51.5,48.5,53.799999999999997,46.200000000000003,49.5,50.5,53,47,46,54],"base":[4.5499999999999998,4.5499999999999998,2.5499999999999998,2.5499999999999998,0.55000000000000004,0.55000000000000004,3.5499999999999998,3.5499999999999998,1.55,1.55,6.5499999999999998,6.5499999999999998,5.5499999999999998,5.5499999999999998],"x":[26,76,22.899999999999999,72.900000000000006,25.75,75.75,26.899999999999999,76.900000000000006,24.75,74.75,26.5,76.5,23,73],"y":[0.90000000000000036,0.90000000000000036,0.90000000000000036,0.90000000000000036,0.89999999999999991,0.89999999999999991,0.90000000000000036,0.90000000000000036,0.90000000000000013,0.90000000000000013,0.90000000000000036,0.90000000000000036,0.90000000000000036,0.90000000000000036],"text":["PercentageGenderPlat: 52.0<br />SocialPlatform: 0.9","PercentageGenderPlat: 48.0<br />SocialPlatform: 0.9","PercentageGenderPlat: 45.8<br />SocialPlatform: 0.9","PercentageGenderPlat: 54.2<br />SocialPlatform: 0.9","PercentageGenderPlat: 51.5<br />SocialPlatform: 0.9","PercentageGenderPlat: 48.5<br />SocialPlatform: 0.9","PercentageGenderPlat: 53.8<br />SocialPlatform: 0.9","PercentageGenderPlat: 46.2<br />SocialPlatform: 0.9","PercentageGenderPlat: 49.5<br />SocialPlatform: 0.9","PercentageGenderPlat: 50.5<br />SocialPlatform: 0.9","PercentageGenderPlat: 53.0<br />SocialPlatform: 0.9","PercentageGenderPlat: 47.0<br />SocialPlatform: 0.9","PercentageGenderPlat: 46.0<br />SocialPlatform: 0.9","PercentageGenderPlat: 54.0<br />SocialPlatform: 0.9"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(135,206,235,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}},{"x":[52,48,45.799999999999997,54.200000000000003,51.5,48.5,53.799999999999997,46.200000000000003,49.5,50.5,53,47,46,54],"y":[5,5,3,3,1,1,4,4,2,2,7,7,6,6],"text":["","","","","","","","","","","","","",""],"hovertext":["PercentageGenderPlat: 52.0<br />SocialPlatform: Snapchat","PercentageGenderPlat: 48.0<br />SocialPlatform: Snapchat","PercentageGenderPlat: 45.8<br />SocialPlatform: Instagram","PercentageGenderPlat: 54.2<br />SocialPlatform: Instagram","PercentageGenderPlat: 51.5<br />SocialPlatform: Facebook","PercentageGenderPlat: 48.5<br />SocialPlatform: Facebook","PercentageGenderPlat: 53.8<br />SocialPlatform: LinkedIn","PercentageGenderPlat: 46.2<br />SocialPlatform: LinkedIn","PercentageGenderPlat: 49.5<br />SocialPlatform: Facebook Messenger","PercentageGenderPlat: 50.5<br />SocialPlatform: Facebook Messenger","PercentageGenderPlat: 53.0<br />SocialPlatform: YouTube","PercentageGenderPlat: 47.0<br />SocialPlatform: YouTube","PercentageGenderPlat: 46.0<br />SocialPlatform: TikTok","PercentageGenderPlat: 54.0<br />SocialPlatform: TikTok"],"textfont":{"size":14.66456692913386,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":130.77625570776257},"font":{"color":"white","family":"DM Sans","size":15},"title":{"text":"The gender distribution of the social network advertising audience in Singapore as of January 2022, by platform","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-5,105],"tickmode":"array","ticktext":["0","25","50","75","100"],"tickvals":[0,24.999999999999996,50,75,100],"categoryorder":"array","categoryarray":["0","25","50","75","100"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Social Platform","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,7.5999999999999996],"tickmode":"array","ticktext":["Facebook","Facebook Messenger","Instagram","LinkedIn","Snapchat","TikTok","YouTube"],"tickvals":[1,2,3,4.0000000000000009,5,6,7],"categoryorder":"array","categoryarray":["Facebook","Facebook Messenger","Instagram","LinkedIn","Snapchat","TikTok","YouTube"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Number of Users","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"138d4359a7c83":{"x":{},"y":{},"type":"bar"},"138d464ea1106":{"x":{},"y":{},"label":{}}},"cur_data":"138d4359a7c83","visdat":{"138d4359a7c83":["function (y) ","x"],"138d464ea1106":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
+<section id="consistent-pace" class="level3">
+<h3 class="anchored" data-anchor-id="consistent-pace">Consistent Pace</h3>
+<p>The annual increase in the number of users is relatively steady, ranging from approximately 0.1 million to 0.2 million users per year. This steady pace suggests a consistent pattern of social media adoption rather than sudden spikes or declines.</p>
 </section>
-<section id="the-average-time-spent-using-online-media-in-singapore-in-q3-2022-by-activity-in-hours-and-minutes-per-day" class="level1">
-<h1>The average time spent using online media in Singapore in Q3 2022, by activity (in hours and minutes per day)</h1>
-<div class="cell">
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-17aa75c0a9cb87277e3d" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-17aa75c0a9cb87277e3d">{"x":{"data":[{"orientation":"v","width":[6.5899999999999999,2.4500000000000002,2.1299999999999999,2.04,1.3200000000000001,0.52000000000000002,0.51000000000000001],"base":[0.55000000000000004,5.5499999999999998,4.5499999999999998,3.5499999999999998,1.55,6.5499999999999998,2.5499999999999998],"x":[3.2949999999999999,1.2250000000000001,1.0649999999999999,1.02,0.66000000000000003,0.26000000000000001,0.255],"y":[0.89999999999999991,0.90000000000000036,0.90000000000000036,0.90000000000000036,0.90000000000000013,0.90000000000000036,0.90000000000000036],"text":["TimeSpent.hours.: 6.59<br />SocialActivity: 0.9","TimeSpent.hours.: 2.45<br />SocialActivity: 0.9","TimeSpent.hours.: 2.13<br />SocialActivity: 0.9","TimeSpent.hours.: 2.04<br />SocialActivity: 0.9","TimeSpent.hours.: 1.32<br />SocialActivity: 0.9","TimeSpent.hours.: 0.52<br />SocialActivity: 0.9","TimeSpent.hours.: 0.51<br />SocialActivity: 0.9"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(255,255,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}},{"x":[6.5899999999999999,2.4500000000000002,2.1299999999999999,2.04,1.3200000000000001,0.52000000000000002,0.51000000000000001],"y":[1,6,5,4,2,7,3],"text":["","","","","","",""],"hovertext":["TimeSpent.hours.: 6.59<br />SocialActivity: Internet","TimeSpent.hours.: 2.45<br />SocialActivity: TV viewing (broadcast and streaming)","TimeSpent.hours.: 2.13<br />SocialActivity: Social media","TimeSpent.hours.: 2.04<br />SocialActivity: Reading press media","TimeSpent.hours.: 1.32<br />SocialActivity: Listening to music streaming services","TimeSpent.hours.: 0.52<br />SocialActivity: Using a game console","TimeSpent.hours.: 0.51<br />SocialActivity: Listening to podcasts"],"textfont":{"size":14.66456692913386,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":241.82648401826489},"font":{"color":"white","family":"DM Sans","size":15},"title":{"text":"The average time spent using online media in Singapore in Q3 2022, by activity","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.32950000000000002,6.9195000000000002],"tickmode":"array","ticktext":["0","1","2","3","4","5","6"],"tickvals":[0,0.99999999999999989,2,3,4,5,6],"categoryorder":"array","categoryarray":["0","1","2","3","4","5","6"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Time Spent (in hours)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,7.5999999999999996],"tickmode":"array","ticktext":["Internet","Listening to music streaming services","Listening to podcasts","Reading press media","Social media","TV viewing (broadcast and streaming)","Using a game console"],"tickvals":[1,2,3,4.0000000000000009,5,6,7],"categoryorder":"array","categoryarray":["Internet","Listening to music streaming services","Listening to podcasts","Reading press media","Social media","TV viewing (broadcast and streaming)","Using a game console"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Social Activity","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"138d4378d5ad3":{"x":{},"y":{},"type":"bar"},"138d45cde3254":{"x":{},"y":{},"label":{}}},"cur_data":"138d4378d5ad3","visdat":{"138d4378d5ad3":["function (y) ","x"],"138d45cde3254":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
+<section id="market-saturation" class="level3">
+<h3 class="anchored" data-anchor-id="market-saturation">Market Saturation</h3>
+<p>While the number of users continues to grow, there might be an indication of approaching market saturation. The growth rate appears to be slowing down slightly in recent years (e.g., from 2025 to 2028), which could suggest that a significant portion of the population already uses social media, and further growth might be constrained by market saturation.</p>
 </section>
-<section id="the-time-spent-on-social-media-platforms-per-day-in-singapore-as-of-january-2022" class="level1">
-<h1>The time spent on social media platforms per day in Singapore as of January 2022</h1>
+<section id="social-media-landscape" class="level3">
+<h3 class="anchored" data-anchor-id="social-media-landscape">Social Media Landscape</h3>
+<p>The data doesn’t specify which social media platforms are included in the statistics. Analyzing the popularity of specific platforms could provide insights into changing preferences and trends among users.</p>
+</section>
+<section id="potential-plateau" class="level3">
+<h3 class="anchored" data-anchor-id="potential-plateau">Potential Plateau</h3>
+<p>The data suggests that the growth rate may reach a plateau in the coming years, as the annual increments become smaller. This could be due to factors such as market saturation, changes in user behavior, or the emergence of alternative communication channels.</p>
+</section>
+<section id="societal-impact" class="level3">
+<h3 class="anchored" data-anchor-id="societal-impact">Societal Impact</h3>
+<p>The increasing number of social media users may have implications for communication, information dissemination, and societal interactions in Singapore. It could influence how individuals, businesses, and institutions engage with one another.</p>
+</section>
+<section id="business-opportunities" class="level3">
+<h3 class="anchored" data-anchor-id="business-opportunities">Business Opportunities</h3>
+<p>The growing user base presents opportunities for businesses and advertisers to reach a wider audience through social media platforms. Understanding the demographics and preferences of the social media users can be crucial for effective marketing strategies.</p>
+</section>
+</section>
+<section id="social-media-penetration-rate-in-singapore" class="level1">
+<h1>Social Media Penetration Rate in Singapore</h1>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-9d942d031c8d936ab6cc" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-9d942d031c8d936ab6cc">{"x":{"data":[{"orientation":"v","width":[0.89999999999999991,0.90000000000000013,0.90000000000000036,0.90000000000000036,0.90000000000000036],"base":[0,0,0,0,0],"x":[1,2,3,4,5],"y":[13,52,22.960000000000001,7.7000000000000002,13],"text":["Number.of.hours.spent.on.website: 0-1 hour<br />PercentageTimeSpent: 13.00","Number.of.hours.spent.on.website: 1-2 hours<br />PercentageTimeSpent: 52.00","Number.of.hours.spent.on.website: 2-4 hours<br />PercentageTimeSpent: 22.96","Number.of.hours.spent.on.website: 5-7 hours<br />PercentageTimeSpent:  7.70","Number.of.hours.spent.on.website: 7+ hours<br />PercentageTimeSpent: 13.00"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(0,255,0,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"orange","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"black"}}},{"x":[1,2,3,4,5],"y":[13,52,22.960000000000001,7.7000000000000002,13],"text":["","","","",""],"hovertext":["Number.of.hours.spent.on.website: 0-1 hour<br />PercentageTimeSpent: 13.00","Number.of.hours.spent.on.website: 1-2 hours<br />PercentageTimeSpent: 52.00","Number.of.hours.spent.on.website: 2-4 hours<br />PercentageTimeSpent: 22.96","Number.of.hours.spent.on.website: 5-7 hours<br />PercentageTimeSpent:  7.70","Number.of.hours.spent.on.website: 7+ hours<br />PercentageTimeSpent: 13.00"],"textfont":{"size":14.66456692913386,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"orange","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"black"}}}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":37.260273972602747},"font":{"color":"black","family":"DM Sans","size":15},"title":{"text":"The time spent on social media platforms per day in Singapore as of January 2022","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,5.5999999999999996],"tickmode":"array","ticktext":["0-1 hour","1-2 hours","2-4 hours","5-7 hours","7+ hours"],"tickvals":[1,2,3,4,5],"categoryorder":"array","categoryarray":["0-1 hour","1-2 hours","2-4 hours","5-7 hours","7+ hours"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Number of hours spent on website","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-2.6000000000000001,54.600000000000001],"tickmode":"array","ticktext":["0","10","20","30","40","50"],"tickvals":[0,10,20,30,40,50],"categoryorder":"array","categoryarray":["0","10","20","30","40","50"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Share of Respondents (in %)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"138d420423c4d":{"x":{},"y":{},"type":"bar"},"138d47a03590b":{"x":{},"y":{},"label":{}}},"cur_data":"138d420423c4d","visdat":{"138d420423c4d":["function (y) ","x"],"138d47a03590b":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-9cb0aa60ead573045725" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-9cb0aa60ead573045725">{"x":{"visdat":{"308472a03f93":["function () ","plotlyVisDat"]},"cur_data":"308472a03f93","attrs":{"308472a03f93":{"x":{},"y":{},"mode":"lines+markers","line":{"color":"orange"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Social Media Penetration Rate in Singapore","xaxis":{"domain":[0,1],"automargin":true,"title":"Year","categoryorder":"trace","tickmode":"linear","dtick":1},"yaxis":{"domain":[0,1],"automargin":true,"title":"Penetration Rate (%)"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":[2019,2020,2021,2022,2023,2024,2025,2026,2027,2028],"y":[84.25,87.920000000000002,90.370000000000005,92.629999999999995,94.609999999999999,96.329999999999998,97.849999999999994,99.090000000000003,99.170000000000002,99.239999999999995],"mode":"lines+markers","line":{"color":"orange"},"type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
+<section id="implications-for-businesses-and-marketers" class="level3">
+<h3 class="anchored" data-anchor-id="implications-for-businesses-and-marketers">Implications for Businesses and Marketers</h3>
+<p>With a penetration rate of 99.24%, businesses and marketers can potentially reach almost the entire population through social media channels. However, it also implies that competition for user attention will be intense, requiring more sophisticated and targeted strategies to stand out in a saturated market.</p>
+</section>
+<section id="shifts-in-user-behavior" class="level3">
+<h3 class="anchored" data-anchor-id="shifts-in-user-behavior">Shifts in User Behavior</h3>
+<p>As social media becomes almost ubiquitous, there might be shifts in user behavior. Users could become more discerning in their interactions, and platforms may need to adapt to changing preferences to maintain engagement.</p>
+</section>
+<section id="diversification-of-platforms" class="level3">
+<h3 class="anchored" data-anchor-id="diversification-of-platforms">Diversification of Platforms</h3>
+<p>With such high penetration, it’s interesting to explore which specific social media platforms are contributing to this growth. Different demographics may favor different platforms, and understanding these preferences can be crucial for businesses tailoring their marketing strategies.</p>
+</section>
+<section id="potential-challenges" class="level3">
+<h3 class="anchored" data-anchor-id="potential-challenges">Potential Challenges</h3>
+<p>While high penetration is generally positive for businesses, it also presents challenges such as potential user fatigue, privacy concerns, and the need for platforms to continuously innovate to retain users.</p>
+</section>
+<section id="integration-of-social-media-in-daily-life" class="level3">
+<h3 class="anchored" data-anchor-id="integration-of-social-media-in-daily-life">Integration of Social Media in Daily Life</h3>
+<p>The high penetration rate suggests that social media has become deeply integrated into the daily lives of Singaporeans. This could have social, cultural, and economic implications, influencing how people communicate, consume information, and make purchasing decisions.</p>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>The data on social media penetration rates in Singapore indicates a nearly universal adoption of social media. While this presents significant opportunities for businesses, it also poses challenges related to saturation and evolving user expectations. Further exploration into user behavior and preferences can provide valuable insights for businesses and policymakers in navigating the dynamic landscape of social media in Singapore.</p>
+</section>
+</section>
+<section id="social-network-advertising-audience-in-singapore" class="level1">
+<h1>Social Network Advertising Audience in Singapore</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-fcdf2f34770cb8067bab" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-fcdf2f34770cb8067bab">{"x":{"visdat":{"30845a67518":["function () ","plotlyVisDat"]},"cur_data":"30845a67518","attrs":{"30845a67518":{"x":{},"y":{},"orientation":"h","marker":{"color":"#D291BC"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Social Network Advertising Audience in Singapore","xaxis":{"domain":[0,1],"automargin":true,"title":"Advertising Audience (in millions)"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Social Platform","type":"category","categoryorder":"array","categoryarray":["Snapchat","Facebook Messenger","TikTok","Instagram","Facebook","LinkedIn","YouTube","Twitter"]},"hoverinfo":"text","hoverlabel":{"bgcolor":"yellow","font":{"color":"black"}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":[5.5,5.0800000000000001,3.7000000000000002,3.2999999999999998,2.7000000000000002,2.3900000000000001,1.95,1.45],"y":["Twitter","YouTube","LinkedIn","Facebook","Instagram","TikTok","Facebook Messenger","Snapchat"],"orientation":"h","marker":{"color":"#D291BC","line":{"color":"rgba(31,119,180,1)"}},"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<section id="twitter" class="level3">
+<h3 class="anchored" data-anchor-id="twitter">Twitter</h3>
+<p>Twitter has the largest advertising audience in Singapore with 5.50 million users. This suggests that Twitter is a popular platform for advertisers to reach a broad audience in the country.</p>
+</section>
+<section id="youtube-and-linkedin" class="level3">
+<h3 class="anchored" data-anchor-id="youtube-and-linkedin">YouTube and LinkedIn</h3>
+<p>YouTube and LinkedIn have substantial advertising audiences as well, with 5.08 million and 3.70 million users, respectively. This indicates that these platforms are also effective channels for reaching a diverse set of users, with YouTube being particularly popular for video content.</p>
+</section>
+<section id="facebook-platforms-facebook-instagram-and-messenger" class="level3">
+<h3 class="anchored" data-anchor-id="facebook-platforms-facebook-instagram-and-messenger">Facebook Platforms (Facebook, Instagram, and Messenger)</h3>
+<p>Facebook, Instagram, and Facebook Messenger collectively have a significant advertising audience of 7.95 million users. This highlights the dominance of the Facebook ecosystem in Singapore, offering advertisers a range of platforms to engage with users.</p>
+</section>
+<section id="consideration-for-advertisers" class="level3">
+<h3 class="anchored" data-anchor-id="consideration-for-advertisers">Consideration for Advertisers</h3>
+<p>Advertisers in Singapore can leverage the diverse user bases of these platforms to tailor their advertising strategies based on the target audience. Each platform caters to different demographics and interests, allowing advertisers to choose the most relevant channels for their campaigns.</p>
+</section>
+<section id="dynamic-landscape" class="level3">
+<h3 class="anchored" data-anchor-id="dynamic-landscape">Dynamic Landscape</h3>
+<p>The popularity of social media platforms can change over time due to shifts in user behavior, the introduction of new features, or the emergence of new platforms. Advertisers should stay updated on trends to ensure the effectiveness of their campaigns.</p>
+</section>
+</section>
+<section id="gender-distribution-of-the-social-network-advertising-audience-in-singapore" class="level1">
+<h1>Gender distribution of the social network advertising audience in Singapore</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-f22c045afc5398b519c7" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-f22c045afc5398b519c7">{"x":{"visdat":{"3084505a37c9":["function () ","plotlyVisDat"]},"cur_data":"3084505a37c9","attrs":{"3084505a37c9":{"x":{},"y":{},"color":{},"colors":["hotpink","#1338BE"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Proportion of Platform by Gender","xaxis":{"domain":[0,1],"automargin":true,"title":"Social Platform","type":"category","categoryorder":"array","categoryarray":["Facebook","Facebook Messenger","Instagram","LinkedIn","Snapchat","TikTok","YouTube"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Proportion (in %)"},"barmode":"group","hoverlabel":{"bgcolor":"yellow","font":{"color":"black"}},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":["Snapchat","Instagram","Facebook","LinkedIn","Facebook Messenger","YouTube","TikTok"],"y":[48,54.200000000000003,48.5,46.200000000000003,50.5,47,54],"type":"bar","name":"Female","marker":{"color":"rgba(255,105,180,1)","line":{"color":"rgba(255,105,180,1)"}},"textfont":{"color":"rgba(255,105,180,1)"},"error_y":{"color":"rgba(255,105,180,1)"},"error_x":{"color":"rgba(255,105,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Snapchat","Instagram","Facebook","LinkedIn","Facebook Messenger","YouTube","TikTok"],"y":[52,45.799999999999997,51.5,53.799999999999997,49.5,53,46],"type":"bar","name":"Male","marker":{"color":"rgba(19,56,190,1)","line":{"color":"rgba(19,56,190,1)"}},"textfont":{"color":"rgba(19,56,190,1)"},"error_y":{"color":"rgba(19,56,190,1)"},"error_x":{"color":"rgba(19,56,190,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>The data provides insights into the gender distribution on various social media platforms in Singapore. While the overall proportions are close to a 50-50 split, there are some notable differences across platforms.</p>
+<section id="snapchat-and-tiktok-gender-split" class="level3">
+<h3 class="anchored" data-anchor-id="snapchat-and-tiktok-gender-split">Snapchat and TikTok Gender Split</h3>
+<p>Snapchat and TikTok show a more distinct gender split. Snapchat has a slightly higher proportion of male users (52%), while TikTok has a higher proportion of female users (54%). This suggests that these platforms may have content or features that attract one gender more than the other.</p>
+</section>
+<section id="linkedin" class="level3">
+<h3 class="anchored" data-anchor-id="linkedin">LinkedIn</h3>
+<p>LinkedIn has a higher proportion of male users (53.80%) compared to female users (46.20%). This aligns with the platform’s historical association with professional networking, a field that has traditionally seen more male representation.</p>
+</section>
+<section id="facebook-and-messenger" class="level3">
+<h3 class="anchored" data-anchor-id="facebook-and-messenger">Facebook and Messenger</h3>
+<p>Facebook and Facebook Messenger have relatively balanced gender distributions, with a slight tilt towards male users on Facebook (51.50%) and a slight tilt towards female users on Messenger (50.50%).</p>
+</section>
+<section id="instagram-and-youtube" class="level3">
+<h3 class="anchored" data-anchor-id="instagram-and-youtube">Instagram and YouTube</h3>
+<p>Instagram has a higher proportion of female users (54.20%), while YouTube has a higher proportion of male users (53.00%). This indicates that visual-centric platforms like Instagram may have a higher appeal among female users, while YouTube’s content may resonate more with male users.</p>
+</section>
+<section id="implications-for-advertisers" class="level3">
+<h3 class="anchored" data-anchor-id="implications-for-advertisers">Implications for Advertisers</h3>
+<p>Advertisers can use this data to tailor their content and campaigns based on the gender distribution of the target audience on each platform. Understanding the gender dynamics on different platforms is crucial for crafting messaging and visuals that resonate with the specific demographics each platform attracts.</p>
+</section>
+<section id="diverse-audience-preferences" class="level3">
+<h3 class="anchored" data-anchor-id="diverse-audience-preferences">Diverse Audience Preferences</h3>
+<p>The varied gender distribution across platforms highlights the diverse preferences and interests of users in Singapore. Advertisers should consider these nuances when planning and executing their social media campaigns.</p>
+</section>
+<section id="evolution-of-platform-demographics" class="level3">
+<h3 class="anchored" data-anchor-id="evolution-of-platform-demographics">Evolution of Platform Demographics</h3>
+<p>The gender distribution on social media platforms can evolve over time as platforms introduce new features or shift their focus. Advertisers should stay attentive to these changes to ensure their strategies remain aligned with the evolving demographics of each platform.</p>
+<p>The data provides valuable insights into the gender distribution of social network advertising audiences in Singapore, offering advertisers the opportunity to refine their targeting strategies for different platforms and audiences.</p>
+</section>
+</section>
+<section id="average-time-spent-using-online-media-in-singapore-by-activity" class="level1">
+<h1>Average time spent using online media in Singapore, by activity</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b769e8eeec8cc28acae2" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-b769e8eeec8cc28acae2">{"x":{"visdat":{"30846a9a209a":["function () ","plotlyVisDat"]},"cur_data":"30846a9a209a","attrs":{"30846a9a209a":{"x":{},"y":{},"orientation":"h","marker":{"color":"green"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Time Spent on Social Activities","xaxis":{"domain":[0,1],"automargin":true,"title":"Time Spent (in hours)"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Social Activity","type":"category","categoryorder":"array","categoryarray":["Listening to podcasts","Using a game console","Listening to music streaming services","Reading press media","Social media","TV viewing (broadcast and streaming)","Internet"]},"hoverinfo":"text","hoverlabel":{"bgcolor":"yellow","font":{"color":"black"}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":[6.5899999999999999,2.4500000000000002,2.1299999999999999,2.04,1.3200000000000001,0.52000000000000002,0.51000000000000001],"y":["Internet","TV viewing (broadcast and streaming)","Social media","Reading press media","Listening to music streaming services","Using a game console","Listening to podcasts"],"orientation":"h","marker":{"color":"green","line":{"color":"rgba(31,119,180,1)"}},"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<section id="internet-usage" class="level3">
+<h3 class="anchored" data-anchor-id="internet-usage">Internet Usage</h3>
+<p>The data reveals that individuals in Singapore spend the most time on the internet, with an average of 6.59 hours per day. This underscores the central role of the internet in people’s daily lives, likely encompassing various online activities.</p>
+</section>
+<section id="significant-tv-viewing-time" class="level3">
+<h3 class="anchored" data-anchor-id="significant-tv-viewing-time">Significant TV Viewing Time</h3>
+<p>TV viewing, including both broadcast and streaming services, accounts for a substantial amount of time, with an average of 2.45 hours per day. This suggests that despite the growth of online platforms, traditional television remains a significant source of entertainment and information.</p>
+</section>
+<section id="social-media-engagement" class="level3">
+<h3 class="anchored" data-anchor-id="social-media-engagement">Social Media Engagement</h3>
+<p>Social media usage takes up an average of 2.13 hours per day. While not as time-consuming as internet usage overall, it still represents a substantial portion of daily online activities. This highlights the importance of social media as a communication and content consumption platform.</p>
+</section>
+<section id="reading-press-media" class="level3">
+<h3 class="anchored" data-anchor-id="reading-press-media">Reading Press Media</h3>
+<p>Reading press media, such as news websites or digital publications, accounts for an average of 2.04 hours per day. This indicates that individuals in Singapore allocate a significant amount of time to staying informed and consuming news content online.</p>
+</section>
+<section id="music-streaming-and-podcast-listening" class="level3">
+<h3 class="anchored" data-anchor-id="music-streaming-and-podcast-listening">Music Streaming and Podcast Listening</h3>
+<p>Listening to music streaming services takes up 1.32 hours per day, indicating a substantial interest in online music consumption. Listening to podcasts follows closely, with an average of 0.51 hours per day. These activities represent the growing popularity of digital audio content.</p>
+</section>
+<section id="gaming-console-usage" class="level3">
+<h3 class="anchored" data-anchor-id="gaming-console-usage">Gaming Console Usage</h3>
+<p>Using a game console takes up a relatively smaller amount of time, with an average of 0.52 hours per day. While not as time-intensive as other activities, it suggests a consistent interest in gaming among the population.</p>
+</section>
+<section id="implications-for-content-creators-and-advertisers" class="level3">
+<h3 class="anchored" data-anchor-id="implications-for-content-creators-and-advertisers">Implications for Content Creators and Advertisers</h3>
+<p>The data provides valuable insights for content creators and advertisers in Singapore. With the internet being the primary platform for various activities, online content creation and digital advertising become crucial avenues for reaching and engaging with the audience.</p>
+</section>
+<section id="diverse-media-consumption-habits" class="level3">
+<h3 class="anchored" data-anchor-id="diverse-media-consumption-habits">Diverse Media Consumption Habits</h3>
+<p>The diversity in time spent on different online activities reflects the varied media consumption habits of individuals in Singapore. Advertisers and content creators should consider this diversity when designing campaigns to ensure they resonate with the preferences of the target audience.</p>
+</section>
+<section id="shifting-media-landscape" class="level3">
+<h3 class="anchored" data-anchor-id="shifting-media-landscape">Shifting Media Landscape</h3>
+<p>The data also indicates a shift in media consumption from traditional TV to online platforms. Advertisers may need to adapt their strategies to meet the changing preferences of consumers.</p>
+</section>
+<section id="conclusion-1" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion-1">Conclusion</h3>
+<p>The data illustrates the significant role of the internet in daily media consumption in Singapore, with diverse activities such as TV viewing, social media engagement, news reading, and digital audio content contributing to a rich and varied online experience.</p>
+</section>
+</section>
+<section id="time-spent-on-social-media-platforms-per-day-in-singapore" class="level1">
+<h1>Time spent on social media platforms per day in Singapore</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b3f6cbe8e5a9c35919ac" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-b3f6cbe8e5a9c35919ac">{"x":{"visdat":{"3084252d4ac8":["function () ","plotlyVisDat"]},"cur_data":"3084252d4ac8","attrs":{"3084252d4ac8":{"x":{},"y":{},"orientation":"h","marker":{"color":["#CE1141","#FFF700","green","blue"]},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Distribution of Time Spent on Social Media Websites","xaxis":{"domain":[0,1],"automargin":true,"title":"Time Spent (in %)"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Time Interval (Daily)","type":"category","categoryorder":"array","categoryarray":["7+ hours","5-7 hours","2-4 hours","0-1 hour"]},"barmode":"stack","hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":[13,52,22,13],"y":["0-1 hour","2-4 hours","5-7 hours","7+ hours"],"orientation":"h","marker":{"color":["#CE1141","#FFF700","green","blue"],"line":{"color":"rgba(31,119,180,1)"}},"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<section id="majority-spend-2-4-hours-on-social-media" class="level3">
+<h3 class="anchored" data-anchor-id="majority-spend-2-4-hours-on-social-media">Majority Spend 2-4 Hours on Social Media</h3>
+<p>The largest percentage of users, 52%, falls into the category of spending 2-4 hours on social media per day. This suggests that a significant portion of the population engages with social media platforms for a moderate amount of time.</p>
+</section>
+<section id="balanced-distribution-across-time-intervals" class="level3">
+<h3 class="anchored" data-anchor-id="balanced-distribution-across-time-intervals">Balanced Distribution Across Time Intervals</h3>
+<p>The distribution of time spent on social media is relatively balanced, with 13% in each of the categories: 0-1 hour, 7+ hours, and 13% in the 5-7 hours category. This indicates that there is diversity in the usage patterns, and no single category dominates the landscape.</p>
+</section>
+<section id="moderate-engagement-is-the-norm" class="level3">
+<h3 class="anchored" data-anchor-id="moderate-engagement-is-the-norm">Moderate Engagement is the Norm</h3>
+<p>The fact that a majority spend 2-4 hours on social media aligns with the idea that many people use these platforms for a mix of social interactions, content consumption, and information sharing without excessively long sessions.</p>
+</section>
+<section id="concerns-about-excessive-use" class="level3">
+<h3 class="anchored" data-anchor-id="concerns-about-excessive-use">Concerns about Excessive Use</h3>
+<p>13% of users spending 7+ hours on social media per day raises considerations about potential negative impacts on productivity, mental health, and overall well-being. Excessive use may lead to issues such as social media addiction and reduced face-to-face interactions.</p>
+</section>
+<section id="implications-for-social-media-platforms" class="level3">
+<h3 class="anchored" data-anchor-id="implications-for-social-media-platforms">Implications for Social Media Platforms</h3>
+<p>Social media platforms may use this data to understand user behavior and tailor their features to encourage moderate and balanced usage. Platforms might consider implementing features that promote healthy usage patterns and discourage excessive screen time.</p>
+</section>
+<section id="considerations-for-advertisers" class="level3">
+<h3 class="anchored" data-anchor-id="considerations-for-advertisers">Considerations for Advertisers</h3>
+<p>Advertisers should consider the distribution of time spent on social media when planning campaigns. Knowing that the majority of users spend a moderate amount of time provides insights into the optimal window for engaging with the audience.</p>
+</section>
+<section id="educational-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="educational-initiatives">Educational Initiatives</h3>
+<p>The data underscores the importance of educational initiatives about responsible social media usage. Both platforms and organizations can play a role in promoting awareness about healthy online habits and the potential pitfalls of excessive use.</p>
+</section>
+<section id="shifts-in-usage-patterns-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="shifts-in-usage-patterns-over-time">Shifts in Usage Patterns Over Time</h3>
+<p>Monitoring changes in these patterns over time is crucial. As social media evolves and users’ habits change, understanding shifts in usage patterns can help platforms and stakeholders adapt their strategies.</p>
+</section>
+<section id="conclusion-2" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion-2">Conclusion</h3>
+<p>In conclusion, the data on time spent on social media in Singapore suggests a diverse distribution, with a significant portion of users engaging for a moderate amount of time. This information has implications for both social media platforms and advertisers, emphasizing the need for strategies that promote responsible and balanced usage.</p>
+</section>
 </section>
 <section id="the-main-reasons-for-using-social-media-in-singapore-in-2022" class="level1">
 <h1>The main reasons for using social media in Singapore in 2022</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>font <span class="ot">=</span> <span class="fu">list</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> <span class="st">"DM Sans"</span>,</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> <span class="dv">15</span>,</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"white"</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>label <span class="ot">=</span> <span class="fu">list</span>(</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">bgcolor =</span> <span class="st">"blue"</span>,</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">bordercolor =</span> <span class="st">"transparent"</span>,</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">font =</span> font</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(pic8,<span class="at">tooltip =</span><span class="fu">c</span>(<span class="st">"x"</span>,<span class="st">"y"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">style</span>(<span class="at">hoverlabel =</span> label) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">font =</span> font)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-0d7105c8aec818901e1d" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-0d7105c8aec818901e1d">{"x":{"data":[{"orientation":"v","width":[45.899999999999999,36.700000000000003,33.100000000000001,30.199999999999999,26.699999999999999,25.300000000000001,21.899999999999999,21.399999999999999,19.100000000000001,18.600000000000001,18,17.300000000000001,17,16,15.5],"base":[7.5499999999999998,1.55,9.5500000000000007,11.550000000000001,2.5499999999999998,3.5499999999999998,12.550000000000001,10.550000000000001,8.5500000000000007,5.5499999999999998,14.550000000000001,6.5499999999999998,0.55000000000000004,13.550000000000001,4.5499999999999998],"x":[22.949999999999999,18.350000000000001,16.550000000000001,15.1,13.35,12.65,10.949999999999999,10.699999999999999,9.5500000000000007,9.3000000000000007,9,8.6500000000000004,8.5,8,7.75],"y":[0.89999999999999947,0.90000000000000013,0.89999999999999858,0.89999999999999858,0.90000000000000036,0.90000000000000036,0.89999999999999858,0.89999999999999858,0.89999999999999858,0.90000000000000036,0.89999999999999858,0.90000000000000036,0.89999999999999991,0.89999999999999858,0.90000000000000036],"text":["PercentageReason: 45.9<br />ReasonSocialMedia: 0.9","PercentageReason: 36.7<br />ReasonSocialMedia: 0.9","PercentageReason: 33.1<br />ReasonSocialMedia: 0.9","PercentageReason: 30.2<br />ReasonSocialMedia: 0.9","PercentageReason: 26.7<br />ReasonSocialMedia: 0.9","PercentageReason: 25.3<br />ReasonSocialMedia: 0.9","PercentageReason: 21.9<br />ReasonSocialMedia: 0.9","PercentageReason: 21.4<br />ReasonSocialMedia: 0.9","PercentageReason: 19.1<br />ReasonSocialMedia: 0.9","PercentageReason: 18.6<br />ReasonSocialMedia: 0.9","PercentageReason: 18.0<br />ReasonSocialMedia: 0.9","PercentageReason: 17.3<br />ReasonSocialMedia: 0.9","PercentageReason: 17.0<br />ReasonSocialMedia: 0.9","PercentageReason: 16.0<br />ReasonSocialMedia: 0.9","PercentageReason: 15.5<br />ReasonSocialMedia: 0.9"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(160,32,240,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}},{"x":[45.899999999999999,36.700000000000003,33.100000000000001,30.199999999999999,26.699999999999999,25.300000000000001,21.899999999999999,21.399999999999999,19.100000000000001,18.600000000000001,18,17.300000000000001,17,16,15.5],"y":[8,2,10,12,3,4,13,11,9,6,15,7,1,14,5],"text":["","","","","","","","","","","","","","",""],"hovertext":["PercentageReason: 45.9<br />ReasonSocialMedia: Keeping in touch with friends and family","PercentageReason: 36.7<br />ReasonSocialMedia: Filling spare time","PercentageReason: 33.1<br />ReasonSocialMedia: Reading news stories","PercentageReason: 30.2<br />ReasonSocialMedia: Seeing what's being talked about","PercentageReason: 26.7<br />ReasonSocialMedia: Finding content","PercentageReason: 25.3<br />ReasonSocialMedia: Finding inspiration for things to do and buy","PercentageReason: 21.9<br />ReasonSocialMedia: Watching live streams","PercentageReason: 21.4<br />ReasonSocialMedia: Seeing content from brands","PercentageReason: 19.1<br />ReasonSocialMedia: Posting about your life","PercentageReason: 18.6<br />ReasonSocialMedia: Finding products to purchase","PercentageReason: 18.0<br />ReasonSocialMedia: Work-related networking or research","PercentageReason: 17.3<br />ReasonSocialMedia: Following celebrities or influencers","PercentageReason: 17.0<br />ReasonSocialMedia: Avoiding missing out (FOMO)","PercentageReason: 16.0<br />ReasonSocialMedia: Watching or following sports","PercentageReason: 15.5<br />ReasonSocialMedia: Finding like-minded communities"],"textfont":{"size":14.66456692913386,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":282.73972602739735},"font":{"color":"white","family":"DM Sans","size":15},"title":{"text":"The main reasons for using social media in Singapore in 2022","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-2.2949999999999999,48.195],"tickmode":"array","ticktext":["0","10","20","30","40"],"tickvals":[0,10,20,30,40],"categoryorder":"array","categoryarray":["0","10","20","30","40"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Share of Respondents (in %)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,15.6],"tickmode":"array","ticktext":["Avoiding missing out (FOMO)","Filling spare time","Finding content","Finding inspiration for things to do and buy","Finding like-minded communities","Finding products to purchase","Following celebrities or influencers","Keeping in touch with friends and family","Posting about your life","Reading news stories","Seeing content from brands","Seeing what's being talked about","Watching live streams","Watching or following sports","Work-related networking or research"],"tickvals":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],"categoryorder":"array","categoryarray":["Avoiding missing out (FOMO)","Filling spare time","Finding content","Finding inspiration for things to do and buy","Finding like-minded communities","Finding products to purchase","Following celebrities or influencers","Keeping in touch with friends and family","Posting about your life","Reading news stories","Seeing content from brands","Seeing what's being talked about","Watching live streams","Watching or following sports","Work-related networking or research"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Reasons for using Social Media","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"138d421254185":{"x":{},"y":{},"type":"bar"},"138d4141a496f":{"x":{},"y":{},"label":{}}},"cur_data":"138d421254185","visdat":{"138d421254185":["function (y) ","x"],"138d4141a496f":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-84455f1318e8542305c7" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-84455f1318e8542305c7">{"x":{"visdat":{"308456037f0f":["function () ","plotlyVisDat"]},"cur_data":"308456037f0f","attrs":{"308456037f0f":{"x":{},"y":{},"marker":{"color":"orange"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Bar Graph","xaxis":{"domain":[0,1],"automargin":true,"title":"Reasons","type":"category","categoryorder":"array","categoryarray":["Finding like-minded communities","Watching or following sports","Avoiding missing out (FOMO)","Following celebrities or influencers","Work-related networking or research","Finding products to purchase","Posting about your life","Seeing content from brands","Watching live streams","Finding inspiration for things to do and buy","Finding content","Seeing what's being talked about","Reading news stories","Filling spare time","Keeping in touch with friends and family"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Share of Respondents (in %)"},"hoverinfo":"text","hoverlabel":{"bgcolor":"lightblue","font":{"color":"black"}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":["Keeping in touch with friends and family","Filling spare time","Reading news stories","Seeing what's being talked about","Finding content","Finding inspiration for things to do and buy","Watching live streams","Seeing content from brands","Posting about your life","Finding products to purchase","Work-related networking or research","Following celebrities or influencers","Avoiding missing out (FOMO)","Watching or following sports","Finding like-minded communities"],"y":[45.899999999999999,36.700000000000003,33.100000000000001,30.199999999999999,26.699999999999999,25.300000000000001,21.899999999999999,21.399999999999999,19.100000000000001,18.600000000000001,18,17.300000000000001,17,16,15.5],"marker":{"color":"orange","line":{"color":"rgba(31,119,180,1)"}},"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
+<section id="keeping-in-touch-with-friends-and-family-45.90" class="level3">
+<h3 class="anchored" data-anchor-id="keeping-in-touch-with-friends-and-family-45.90">Keeping in Touch with Friends and Family (45.90%)</h3>
+<p>The top reason for using social media is to stay connected with friends and family. This aligns with the fundamental social nature of these platforms, emphasizing communication and relationship maintenance.</p>
 </section>
-<section id="the-share-of-consumers-who-engaged-with-ads-on-social-media-platforms-in-singapore-as-of-january-2022" class="level1">
-<h1>The share of consumers who engaged with ads on social media platforms in Singapore as of January 2022</h1>
+<section id="filling-spare-time-36.70" class="level3">
+<h3 class="anchored" data-anchor-id="filling-spare-time-36.70">Filling Spare Time (36.70%)</h3>
+<p>Many users in Singapore use social media as a way to pass the time. This suggests that social media platforms serve not only as communication tools but also as entertainment outlets for users looking to occupy their leisure time.</p>
+</section>
+<section id="reading-news-stories-33.10" class="level3">
+<h3 class="anchored" data-anchor-id="reading-news-stories-33.10">Reading News Stories (33.10%)</h3>
+<p>Social media has become a significant source of news for many individuals. This reflects the platforms’ role in disseminating real-time information and highlights their influence in shaping the news consumption habits of users.</p>
+</section>
+<section id="seeing-whats-being-talked-about-30.20" class="level3">
+<h3 class="anchored" data-anchor-id="seeing-whats-being-talked-about-30.20">Seeing What’s Being Talked About (30.20%)</h3>
+<p>Users are interested in staying informed about trending topics and discussions. This indicates a desire to be part of the broader online conversation and stay updated on current events and popular culture.</p>
+</section>
+<section id="finding-content-26.70" class="level3">
+<h3 class="anchored" data-anchor-id="finding-content-26.70">Finding Content (26.70%)</h3>
+<p>Users actively seek out content on social media, emphasizing the platform’s role as a content discovery and consumption tool. This can include a wide range of content, from articles and videos to images and user-generated posts.</p>
+</section>
+<section id="finding-inspiration-for-things-to-do-and-buy-25.30" class="level3">
+<h3 class="anchored" data-anchor-id="finding-inspiration-for-things-to-do-and-buy-25.30">Finding Inspiration for Things to Do and Buy (25.30%)</h3>
+<p>Social media serves as a source of inspiration for activities and purchases. Brands can leverage this by creating engaging and inspirational content that resonates with the interests and preferences of users.</p>
+</section>
+<section id="watching-live-streams-21.90" class="level3">
+<h3 class="anchored" data-anchor-id="watching-live-streams-21.90">Watching Live Streams (21.90%)</h3>
+<p>The popularity of live streams suggests an interest in real-time content. This can include live events, product launches, and influencer activities, showcasing the dynamic and interactive nature of social media.</p>
+</section>
+<section id="seeing-content-from-brands-21.40" class="level3">
+<h3 class="anchored" data-anchor-id="seeing-content-from-brands-21.40">Seeing Content from Brands (21.40%)</h3>
+<p>Users are interested in content from brands, indicating that well-executed brand presence on social media can capture the attention and interest of the audience.</p>
+</section>
+<section id="work-related-networking-or-research-18.00" class="level3">
+<h3 class="anchored" data-anchor-id="work-related-networking-or-research-18.00">Work-Related Networking or Research (18.00%)</h3>
+<p>A notable percentage uses social media for work-related purposes, including networking and research. This highlights the professional utility of these platforms beyond personal use.</p>
+</section>
+<section id="finding-like-minded-communities-15.50" class="level3">
+<h3 class="anchored" data-anchor-id="finding-like-minded-communities-15.50">Finding Like-Minded Communities (15.50%)</h3>
+<p>Users are interested in connecting with like-minded individuals, emphasizing the role of social media in fostering communities around shared interests and hobbies.</p>
+</section>
+<section id="shifts-in-consumer-behavior" class="level3">
+<h3 class="anchored" data-anchor-id="shifts-in-consumer-behavior">Shifts in Consumer Behavior</h3>
+<p>The data reflects the evolving role of social media in influencing consumer behavior, from product discovery to purchase decisions.</p>
+</section>
+<section id="opportunities-for-marketers" class="level3">
+<h3 class="anchored" data-anchor-id="opportunities-for-marketers">Opportunities for Marketers</h3>
+<p>Marketers can leverage these insights to tailor their strategies, creating content that aligns with users’ primary motivations for using social media.</p>
+</section>
+<section id="importance-of-social-connection" class="level3">
+<h3 class="anchored" data-anchor-id="importance-of-social-connection">Importance of Social Connection</h3>
+<p>The prominence of keeping in touch with friends and family underscores the social nature of these platforms, emphasizing their role in maintaining and strengthening relationships.</p>
+</section>
+<section id="conclusion-3" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion-3">Conclusion</h3>
+<p>In conclusion, the data provides valuable insights into the multifaceted reasons why individuals in Singapore use social media, encompassing social connection, entertainment, information consumption, and inspiration. Understanding these motivations is crucial for both users and businesses looking to maximize the benefits of social media engagement.</p>
+</section>
+</section>
+<section id="the-most-popular-youtube-channels-in-singapore-by-number-of-video-views-in-billions" class="level1">
+<h1>The most popular Youtube channels in Singapore, by number of video views (in billions)</h1>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-fc1335027d79d810be99" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-fc1335027d79d810be99">{"x":{"data":[{"orientation":"v","width":[0.89999999999999991,0.90000000000000036,0.90000000000000013],"base":[0,0,0],"x":[1,3,2],"y":[71,69,56],"text":["CustomerEngage: Facebook<br />PercentageEngage: 71","CustomerEngage: YouTube<br />PercentageEngage: 69","CustomerEngage: Instagram<br />PercentageEngage: 56"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(135,206,235,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}},{"x":[1,3,2],"y":[71,69,56],"text":["","",""],"hovertext":["CustomerEngage: Facebook<br />PercentageEngage: 71","CustomerEngage: YouTube<br />PercentageEngage: 69","CustomerEngage: Instagram<br />PercentageEngage: 56"],"textfont":{"size":14.66456692913386,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":37.260273972602747},"font":{"color":"white","family":"DM Sans","size":15},"title":{"text":"Share of consumers who engaged with ads on social media platforms in Singapore as of January 2022","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,3.6000000000000001],"tickmode":"array","ticktext":["Facebook","Instagram","YouTube"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["Facebook","Instagram","YouTube"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-3.5500000000000003,74.549999999999997],"tickmode":"array","ticktext":["0","20","40","60"],"tickvals":[0,20,39.999999999999993,60],"categoryorder":"array","categoryarray":["0","20","40","60"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Number of Users","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"138d445d722bf":{"x":{},"y":{},"type":"bar"},"138d48e3e92":{"x":{},"y":{},"label":{}}},"cur_data":"138d445d722bf","visdat":{"138d445d722bf":["function (y) ","x"],"138d48e3e92":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-6e1f02d25c7b9517dbee" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-6e1f02d25c7b9517dbee">{"x":{"visdat":{"308439be1f1e":["function () ","plotlyVisDat"]},"cur_data":"308439be1f1e","attrs":{"308439be1f1e":{"x":{},"y":{},"marker":{"color":"#1338BE"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Most Viewed Youtube Channels in Singapore","xaxis":{"domain":[0,1],"automargin":true,"title":"Youtube Channel Name","type":"category","categoryorder":"array","categoryarray":["mingweirocks","ONE Championship","Doctor Tristan Peh","Cartoon Network Asia","Survival Builders","iQIYI","JianHao Tan","radmiru","Masti Tv - Hindi Stories","Muse Asia"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number of Views (in billions)"},"hoverinfo":"text","hoverlabel":{"bgcolor":"lightblue","font":{"color":"black"}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":["mingweirocks","ONE Championship","Doctor Tristan Peh","Cartoon Network Asia","Survival Builders","iQIYI","JianHao Tan","radmiru","Masti Tv - Hindi Stories","Muse Asia"],"y":[5.2300000000000004,2.6800000000000002,2.4399999999999999,2.3100000000000001,2.2999999999999998,2.25,1.79,1.79,1.7,1.6000000000000001],"marker":{"color":"#1338BE","line":{"color":"rgba(31,119,180,1)"}},"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
+<section id="diverse-content-preferences" class="level3">
+<h3 class="anchored" data-anchor-id="diverse-content-preferences">Diverse Content Preferences</h3>
+<p>The variety of channels in the top 10, ranging from individual content creators to sports, health, entertainment, and regional content, suggests that viewers in Singapore have diverse interests. The popularity of channels like “Cartoon Network Asia” and “Masti Tv - Hindi Stories” indicates an appreciation for both animated and narrative content.</p>
 </section>
-<section id="the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-video-views-in-billions" class="level1">
-<h1>The most popular Youtube channels in Singapore as of October 2022, by number of video views (in billions)</h1>
+<section id="individual-creators-have-significant-impact" class="level3">
+<h3 class="anchored" data-anchor-id="individual-creators-have-significant-impact">Individual Creators Have Significant Impact</h3>
+<p>“mingweirocks,” an individual content creator, has the highest number of views, emphasizing the influential role that individual creators can have on YouTube. This suggests that personal branding and unique content creation can attract substantial audiences.</p>
+</section>
+<section id="global-and-regional-appeal" class="level3">
+<h3 class="anchored" data-anchor-id="global-and-regional-appeal">Global and Regional Appeal</h3>
+<p>The presence of “ONE Championship” and “iQIYI” suggests a mix of content with global and regional appeal. While ONE Championship caters to sports fans globally, iQIYI likely attracts viewers interested in Asian dramas and movies.</p>
+</section>
+<section id="interest-in-survival-and-diy-content" class="level3">
+<h3 class="anchored" data-anchor-id="interest-in-survival-and-diy-content">Interest in Survival and DIY Content</h3>
+<p>Channels like “Survival Builders” indicate an interest in survival-themed or do-it-yourself (DIY) content. This aligns with broader trends on YouTube, where audiences engage with content that provides practical or entertaining insights.</p>
+</section>
+<section id="health-and-medical-content-is-popular" class="level3">
+<h3 class="anchored" data-anchor-id="health-and-medical-content-is-popular">Health and Medical Content is Popular</h3>
+<p>The inclusion of “Doctor Tristan Peh” among the top channels reflects a significant interest in health and medical content. Viewers may be seeking information and advice from trusted sources in the medical field.</p>
+</section>
+<section id="cultural-and-language-diversity" class="level3">
+<h3 class="anchored" data-anchor-id="cultural-and-language-diversity">Cultural and Language Diversity</h3>
+<p>The presence of channels like “Masti Tv - Hindi Stories” and “Muse Asia” highlights the importance of cultural and language diversity on the platform. YouTube caters to audiences with different language preferences and cultural backgrounds.</p>
+</section>
+<section id="entertainment-platforms-extend-reach" class="level3">
+<h3 class="anchored" data-anchor-id="entertainment-platforms-extend-reach">Entertainment Platforms Extend Reach</h3>
+<p>Platforms like iQIYI, which is primarily a streaming service, leverage YouTube to extend their reach and engage with a broader audience. This highlights the complementary nature of various online platforms in the digital ecosystem.</p>
+</section>
+<section id="balanced-representation" class="level3">
+<h3 class="anchored" data-anchor-id="balanced-representation">Balanced Representation</h3>
+<p>The relatively balanced distribution of views among the top channels suggests a healthy competition and a diverse content landscape on YouTube in Singapore. No single genre or category dominates the viewership.</p>
+</section>
+<section id="potential-for-monetization" class="level3">
+<h3 class="anchored" data-anchor-id="potential-for-monetization">Potential for Monetization</h3>
+<p>High view counts indicate the potential for monetization through YouTube’s Partner Program. Creators and organizations with popular channels have opportunities to generate revenue through ads, sponsorships, and other partnerships.</p>
+</section>
+<section id="continued-growth-of-youtube-in-singapore" class="level3">
+<h3 class="anchored" data-anchor-id="continued-growth-of-youtube-in-singapore">Continued Growth of YouTube in Singapore</h3>
+<p>The popularity of these channels, as indicated by the significant view counts, suggests the continued growth and influence of YouTube in Singapore as a primary platform for content consumption.</p>
+</section>
+</section>
+<section id="the-most-popular-youtube-channels-in-singapore-by-number-of-subscribers-in-millions" class="level1">
+<h1>The most popular Youtube channels in Singapore, by number of subscribers (in millions)</h1>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-66b8fbce260f1450788b" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-66b8fbce260f1450788b">{"x":{"data":[{"orientation":"v","width":[5.2300000000000004,2.6800000000000002,2.4399999999999999,2.3100000000000001,2.2999999999999998,2.25,1.79,1.79,1.7,1.6000000000000001],"base":[5.5499999999999998,7.5499999999999998,1.55,0.55000000000000004,9.5500000000000007,2.5499999999999998,3.5499999999999998,8.5500000000000007,4.5499999999999998,6.5499999999999998],"x":[2.6150000000000002,1.3400000000000001,1.22,1.155,1.1499999999999999,1.125,0.89500000000000002,0.89500000000000002,0.84999999999999998,0.80000000000000004],"y":[0.90000000000000036,0.89999999999999947,0.90000000000000013,0.89999999999999991,0.89999999999999858,0.90000000000000036,0.90000000000000036,0.89999999999999858,0.90000000000000036,0.90000000000000036],"text":["TotalViews.billions.: 5.23<br />Youtube1: 0.9","TotalViews.billions.: 2.68<br />Youtube1: 0.9","TotalViews.billions.: 2.44<br />Youtube1: 0.9","TotalViews.billions.: 2.31<br />Youtube1: 0.9","TotalViews.billions.: 2.30<br />Youtube1: 0.9","TotalViews.billions.: 2.25<br />Youtube1: 0.9","TotalViews.billions.: 1.79<br />Youtube1: 0.9","TotalViews.billions.: 1.79<br />Youtube1: 0.9","TotalViews.billions.: 1.70<br />Youtube1: 0.9","TotalViews.billions.: 1.60<br />Youtube1: 0.9"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(135,206,235,1)","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}},{"x":[5.2300000000000004,2.6800000000000002,2.4399999999999999,2.3100000000000001,2.2999999999999998,2.25,1.79,1.79,1.7,1.6000000000000001],"y":[6,8,2,1,10,3,4,9,5,7],"text":["","","","","","","","","",""],"hovertext":["TotalViews.billions.: 5.23<br />Youtube1: mingweirocks","TotalViews.billions.: 2.68<br />Youtube1: ONE Championship","TotalViews.billions.: 2.44<br />Youtube1: Doctor Tristan Peh","TotalViews.billions.: 2.31<br />Youtube1: Cartoon Network Asia","TotalViews.billions.: 2.30<br />Youtube1: Survival Builders","TotalViews.billions.: 2.25<br />Youtube1: iQIYI","TotalViews.billions.: 1.79<br />Youtube1: JianHao Tan","TotalViews.billions.: 1.79<br />Youtube1: radmiru","TotalViews.billions.: 1.70<br />Youtube1: Masti Tv - Hindi Stories","TotalViews.billions.: 1.60<br />Youtube1: Muse Asia"],"textfont":{"size":14.66456692913386,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"blue","bordercolor":"transparent","font":{"family":"DM Sans","size":15,"color":"white"}}}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":165.84474885844753},"font":{"color":"white","family":"DM Sans","size":15},"title":{"text":"Share of consumers who engaged with ads on social media platforms in Singapore as of January 2022","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.26150000000000001,5.4915000000000003],"tickmode":"array","ticktext":["0","1","2","3","4","5"],"tickvals":[0,1,1.9999999999999998,3,4,5],"categoryorder":"array","categoryarray":["0","1","2","3","4","5"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Total Views (in billions)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,10.6],"tickmode":"array","ticktext":["Cartoon Network Asia","Doctor Tristan Peh","iQIYI","JianHao Tan","Masti Tv - Hindi Stories","mingweirocks","Muse Asia","ONE Championship","radmiru","Survival Builders"],"tickvals":[1,2,3,4,5,6.0000000000000009,7,8,9,10],"categoryorder":"array","categoryarray":["Cartoon Network Asia","Doctor Tristan Peh","iQIYI","JianHao Tan","Masti Tv - Hindi Stories","mingweirocks","Muse Asia","ONE Championship","radmiru","Survival Builders"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Youtube Channel","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"138d42f6863bc":{"x":{},"y":{},"type":"bar"},"138d470376f93":{"x":{},"y":{},"label":{}}},"cur_data":"138d42f6863bc","visdat":{"138d42f6863bc":["function (y) ","x"],"138d470376f93":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-f6d4ca8e4efcb59d65f2" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-f6d4ca8e4efcb59d65f2">{"x":{"visdat":{"3084e726548":["function () ","plotlyVisDat"]},"cur_data":"3084e726548","attrs":{"3084e726548":{"x":{},"y":{},"marker":{"color":"#03AC13"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Most Subscribed YouTube Channels in Singapore","xaxis":{"domain":[0,1],"automargin":true,"title":"Youtube Channel Name","type":"category","categoryorder":"array","categoryarray":["Survival Builder","Mayajaal","Masti Tv-Hindi Stories","Primitive Survival Tool","Jungle Survival","Jadu Tv- Hindi Stories","JianHao Tan","PopCorn/- Funny Hindi Comedy Videos","TAWHID AFRIDI","Muse Asia"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number of Subscribers (in millions)"},"hoverinfo":"text","hoverlabel":{"bgcolor":"#E0115F","font":{"color":"white"}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":["Survival Builder","Mayajaal","Masti Tv-Hindi Stories","Primitive Survival Tool","Jungle Survival","Jadu Tv- Hindi Stories","JianHao Tan","PopCorn/- Funny Hindi Comedy Videos","TAWHID AFRIDI","Muse Asia"],"y":[10.1,9.4800000000000004,6.7199999999999998,6.2599999999999998,5.9500000000000002,5.6200000000000001,5.6100000000000003,5.5499999999999998,5.5099999999999998,5.5],"marker":{"color":"#03AC13","line":{"color":"rgba(31,119,180,1)"}},"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
+<section id="diversity-in-content-themes" class="level3">
+<h3 class="anchored" data-anchor-id="diversity-in-content-themes">Diversity in Content Themes</h3>
+<p>The channels represent a diverse range of content themes, including survival building, storytelling (both in Hindi and English), comedy, and entertainment. This diversity reflects the varied interests of the YouTube audience in Singapore.</p>
 </section>
-<section id="the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-subscribers-in-millions" class="level1">
-<h1>The most popular Youtube channels in Singapore as of October 2022, by number of subscribers (in millions)</h1>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>My topic of choice covers Social Media in Singapore. More specifically, I will be investigating how social media usage has evolved over the past decade in Singapore, and the key trends that are influencing these changes.</p>
+<section id="survival-and-outdoor-themes-popular" class="level3">
+<h3 class="anchored" data-anchor-id="survival-and-outdoor-themes-popular">Survival and Outdoor Themes Popular</h3>
+<p>Channels such as “Survival Builder,” “Primitive Survival Tool,” and “Jungle Survival” with high subscriber counts suggest a significant interest in survival and outdoor-themed content. Viewers may be drawn to content that explores survival skills, outdoor adventures, and primitive tools.</p>
 </section>
-<section id="number-of-social-media-users-in-singapore-for-2017-2028-1" class="level2">
-<h2 class="anchored" data-anchor-id="number-of-social-media-users-in-singapore-for-2017-2028-1">Number of social media users in Singapore for 2017-2028</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Picture1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the textbox for the graph</figcaption>
-</figure>
-</div>
+<section id="cultural-diversity-in-storytelling" class="level3">
+<h3 class="anchored" data-anchor-id="cultural-diversity-in-storytelling">Cultural Diversity in Storytelling</h3>
+<p>Channels like “Masti Tv-Hindi Stories” and “Jadu Tv- Hindi Stories” catering to Hindi storytelling indicate a diverse cultural audience in Singapore. These channels likely attract viewers who appreciate Hindi-language content.</p>
 </section>
-<section id="the-social-media-penetration-rate-in-singapore-for-2019-2028-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-social-media-penetration-rate-in-singapore-for-2019-2028-1">The social media penetration rate in Singapore for 2019-2028</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Picture2.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the textbox for the graph</figcaption>
-</figure>
-</div>
+<section id="individual-creators-impact" class="level3">
+<h3 class="anchored" data-anchor-id="individual-creators-impact">Individual Creators’ Impact</h3>
+<p>The presence of individual content creators like “JianHao Tan” showcases the influence of individual personalities on YouTube. “JianHao Tan” has a substantial subscriber base, suggesting that individual creators can have a significant impact on the platform.</p>
 </section>
-<section id="the-size-of-the-social-network-advertising-audience-in-singapore-as-of-january-2023-by-platform-in-millions-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-size-of-the-social-network-advertising-audience-in-singapore-as-of-january-2023-by-platform-in-millions-1">The size of the social network advertising audience in Singapore as of January 2023, by platform (in millions)</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Picture4.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the textbox for the graph</figcaption>
-</figure>
-</div>
+<section id="entertainment-and-comedy-appeal" class="level3">
+<h3 class="anchored" data-anchor-id="entertainment-and-comedy-appeal">Entertainment and Comedy Appeal</h3>
+<p>“PopCorn/- Funny Hindi Comedy Videos” with 5.55 million subscribers suggests a strong appeal for comedic content. This aligns with broader trends on YouTube, where entertainment and humor play a crucial role in engaging audiences.</p>
 </section>
-<section id="the-gender-distribution-of-the-social-network-advertising-audience-in-singapore-as-of-january-2022-by-platform-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-gender-distribution-of-the-social-network-advertising-audience-in-singapore-as-of-january-2022-by-platform-1">The gender distribution of the social network advertising audience in Singapore as of January 2022, by platform</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Picture5.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the textbox for the graph</figcaption>
-</figure>
-</div>
+<section id="regional-and-global-entertainment" class="level3">
+<h3 class="anchored" data-anchor-id="regional-and-global-entertainment">Regional and Global Entertainment</h3>
+<p>Channels like “Muse Asia” with 5.50 million subscribers indicate an interest in Asian entertainment. Such channels may offer a mix of regional and global content, catering to viewers with diverse cultural backgrounds.</p>
 </section>
-<section id="the-average-time-spent-using-online-media-in-singapore-in-q3-2022-by-activity-in-hours-and-minutes-per-day-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-average-time-spent-using-online-media-in-singapore-in-q3-2022-by-activity-in-hours-and-minutes-per-day-1">The average time spent using online media in Singapore in Q3 2022, by activity (in hours and minutes per day)</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Picture6.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the textbox for the graph</figcaption>
-</figure>
-</div>
+<section id="influence-of-storytelling" class="level3">
+<h3 class="anchored" data-anchor-id="influence-of-storytelling">Influence of Storytelling</h3>
+<p>Channels focusing on storytelling, such as “Mayajaal” and “Jadu Tv- Hindi Stories,” suggest that narrative content has a significant impact on subscriber engagement. Storytelling appeals to audiences looking for immersive and engaging content.</p>
 </section>
-<section id="the-time-spent-on-social-media-platforms-per-day-in-singapore-as-of-january-2022-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-time-spent-on-social-media-platforms-per-day-in-singapore-as-of-january-2022-1">The time spent on social media platforms per day in Singapore as of January 2022</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Picture7.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the textbox for the graph</figcaption>
-</figure>
-</div>
+<section id="potential-for-niche-content" class="level3">
+<h3 class="anchored" data-anchor-id="potential-for-niche-content">Potential for Niche Content</h3>
+<p>Channels with themes like survival, storytelling, and comedy showcase the potential for niche content to attract a dedicated subscriber base. Niche content creators can find success by catering to specific interests and preferences.</p>
 </section>
-<section id="the-main-reasons-for-using-social-media-in-singapore-in-2022-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-main-reasons-for-using-social-media-in-singapore-in-2022-1">The main reasons for using social media in Singapore in 2022</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Picture8.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the textbox for the graph</figcaption>
-</figure>
-</div>
+<section id="cross-cultural-engagement" class="level3">
+<h3 class="anchored" data-anchor-id="cross-cultural-engagement">Cross-Cultural Engagement</h3>
+<p>The mix of English and Hindi content suggests a cross-cultural engagement on the platform. YouTube serves as a space where diverse cultural and linguistic communities come together, fostering a sense of global connectivity.</p>
 </section>
-<section id="the-share-of-consumers-who-engaged-with-ads-on-social-media-platforms-in-singapore-as-of-january-2022-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-share-of-consumers-who-engaged-with-ads-on-social-media-platforms-in-singapore-as-of-january-2022-1">The share of consumers who engaged with ads on social media platforms in Singapore as of January 2022</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Picture9.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the textbox for the graph</figcaption>
-</figure>
-</div>
+<section id="opportunities-for-collaboration" class="level3">
+<h3 class="anchored" data-anchor-id="opportunities-for-collaboration">Opportunities for Collaboration</h3>
+<p>Given the varied content themes and subscriber bases, there are opportunities for collaboration between creators to tap into each other’s audiences. Collaborative content can help creators expand their reach and diversify their content offerings.</p>
 </section>
-<section id="the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-video-views-in-billions-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-video-views-in-billions-1">The most popular Youtube channels in Singapore as of October 2022, by number of video views (in billions)</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Picture10.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the textbox for the graph</figcaption>
-</figure>
-</div>
-</section>
-<section id="the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-subscribers-in-millions-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-most-popular-youtube-channels-in-singapore-as-of-october-2022-by-number-of-subscribers-in-millions-1">The most popular Youtube channels in Singapore as of October 2022, by number of subscribers (in millions)</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Picture11.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the textbox for the graph</figcaption>
-</figure>
-</div>
+<section id="branding-and-consistency" class="level3">
+<h3 class="anchored" data-anchor-id="branding-and-consistency">Branding and Consistency</h3>
+<p>Channels like “TAWHID AFRIDI” with 5.51 million subscribers showcase the importance of consistent branding and content delivery. Successful channels often maintain a consistent theme or style that resonates with their audience.</p>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -646,4 +776,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
